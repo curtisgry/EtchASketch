@@ -5,11 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <title>Etch A Sketch</title>
 </head>
 
 <body>
+    <section class="container-main">
+        <h1>Etch a Sketch</h1>
+        <div class="form-container">
+            <form id="gridInput" action="submit">
+                <select class="grid-select" name="grid" id="gridValue">
+                    <option value="8" selected>8</option>
+                    <option value="16">16</option>
+                    <option value="32">32</option>
+                    <option value="64">64</option>
+                    <option value="128">128</option>
+                </select>
+                <button id="gridBtn" class="btn">Generate Grid</button>
+                <button id="clearBtn" class="btn btn-clear">Clear</button>
+            </form>
+        </div>
+        <div class="form-container">
+            <form id="colorInput" action="submit">
+                <input id="fade" value="fade" name="colorOption" type="radio">
+                <label class="btn btn-select" for="fade">Fade </label>
+                <input id="rainbow" value="rainbow" name="colorOption" type="radio">
+                <label class="btn btn-select" for="rainbow">Rainbow </label>
+                <input id="select" value="select" name="colorOption" type="radio" checked>
+                <label class="btn btn-select" for="select">Select Color </label>
+                <input id="colorPicker" name="color" type="color" value="#000000">
+            </form>
+        </div>
+        <div class="sketch-container">
+            <div class="sketch">
 
+            </div>
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
 </body>
 
 </html>
