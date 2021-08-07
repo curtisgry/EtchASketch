@@ -92,15 +92,10 @@ function addEvents() {
 }
 
 
-
 generateGrid(8);
 radioEvents()
 addEvents();
 setGridSize();
-
-// select.addEventListener('input', function (e) {
-//     e.preventDefault;
-// })
 
 clearBtn.addEventListener('click', function (e) {
     e.preventDefault();
